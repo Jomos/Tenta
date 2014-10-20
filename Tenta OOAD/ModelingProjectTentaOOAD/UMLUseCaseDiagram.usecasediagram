@@ -1,31 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="17b0b7ce-1987-4c0e-a343-c00974992aef" name="UMLUseCaseDiagram" linkedPackageId="89d13536-35bc-4342-925e-781312cea0ce" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="277c608a-f346-4260-a21b-16b51e8172d0">
-      <profileInstance Id="7f512e37-6266-4b71-bb8f-925c6089e998" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="b145a40c-30fe-4540-9677-6ee89bf3b74e">
-      <profileInstance Id="22044561-94b0-49ec-a6e6-9fdcd831951b" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
-      <subsystem Id="3a0edc31-13ee-4033-a891-8fe674215759" name="TentaOOADSystem" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <subsystem Id="3a0edc31-13ee-4033-a891-8fe674215759" name="CrimeHeadlineSystem" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7d11cb62-cf96-4a53-bfff-ec0b5243cd36" />
       </subsystem>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <actor Id="26def6b8-01d3-46ad-9923-b5e643450b65" name="User" isAbstract="false" isLeaf="false">
+      <actor Id="26def6b8-01d3-46ad-9923-b5e643450b65" name="Criminal" isAbstract="false" isLeaf="false">
         <elementDefinition Id="3ed13d3f-9989-4ec3-98e4-92697e07008f" />
         <targetEnds>
           <association Id="15901b33-b3fa-43ff-a789-c83f76e7078c" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Recieve up-to-date information from Polisen.se and Utryckning.se" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="9482ab3a-1b90-40b7-9a63-abc0898b0783" LastKnownName="Recieve up-to-date information from Polisen.se and Utryckning.se" />
+            <useCaseMoniker Id="9482ab3a-1b90-40b7-9a63-abc0898b0783" LastKnownName="Read top crimes&#xD;&#xA;" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="1cb3be32-1abd-4f27-9ae7-ff8bef8b9a1d" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -44,15 +30,29 @@
       </actor>
     </useCaseModelRootHasTypes>
     <packageHasNamedElement>
-      <useCase Id="9482ab3a-1b90-40b7-9a63-abc0898b0783" name="Recieve up-to-date information from Polisen.se and Utryckning.se" isAbstract="false" isLeaf="false">
+      <useCase Id="9482ab3a-1b90-40b7-9a63-abc0898b0783" name="Read top crimes&#xD;&#xA;" isAbstract="false" isLeaf="false">
         <elementDefinition Id="83c3c722-6ae0-4bc3-a3a2-e88fa8e19bb3" />
         <subjects>
-          <subsystemMoniker Id="3a0edc31-13ee-4033-a891-8fe674215759" LastKnownName="TentaOOADSystem" />
+          <subsystemMoniker Id="3a0edc31-13ee-4033-a891-8fe674215759" LastKnownName="CrimeHeadlineSystem" />
         </subjects>
       </useCase>
     </packageHasNamedElement>
   </packagedElements>
   <package Id="89d13536-35bc-4342-925e-781312cea0ce" name="ModelingProjectTentaOOAD">
     <elementDefinition Id="cf484412-0a1e-41a3-92d4-b6a383975321" />
+    <profileInstances>
+      <packageHasProfileInstances Id="277c608a-f346-4260-a21b-16b51e8172d0">
+        <profileInstance Id="7f512e37-6266-4b71-bb8f-925c6089e998" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b145a40c-30fe-4540-9677-6ee89bf3b74e">
+        <profileInstance Id="22044561-94b0-49ec-a6e6-9fdcd831951b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>

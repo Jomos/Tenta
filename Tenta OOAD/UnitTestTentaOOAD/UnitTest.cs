@@ -10,18 +10,23 @@ namespace UnitTestTentaOOAD
         public void TestHeadlinePolisen.se()
         {
             //Assign
-            string headline = "Så kan Polisen bättre utreda våldtäkter";  
+
+             
             //Act
+            string headline=
             //Assert
+            Assert.IsNotNull(headline);
         }
 
         [TestMethod]
         public void TestHeadlineUtryckning.se()
         {
             //Assign
-            string headline = "Brand på Ahlstroms i Ställdalen";
+           
             //Act
-            //Assert
+            string headline =
+                //Assert
+            Assert.IsNotNull(headline);
         }
     }
 }

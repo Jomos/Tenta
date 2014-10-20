@@ -21,7 +21,7 @@
     <packageHasNamedElement>
       <subsystem
         Id="7d11cb62-cf96-4a53-bfff-ec0b5243cd36"
-        name="TentaOOADSystem"
+        name="CrimeHeadlineSystem"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -29,7 +29,7 @@
     <packageHasNamedElement>
       <actor
         Id="3ed13d3f-9989-4ec3-98e4-92697e07008f"
-        name="User"
+        name="Criminal"
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
@@ -42,7 +42,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="83c3c722-6ae0-4bc3-a3a2-e88fa8e19bb3"
-              LastKnownName="Recieve up-to-date information from Polisen.se and Utryckning.se"
+              LastKnownName="Read top crimes&#xD;&#xA;"
               LastKnownLocation="ModelingProjectTentaOOAD.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -78,13 +78,13 @@
     <packageHasNamedElement>
       <useCase
         Id="83c3c722-6ae0-4bc3-a3a2-e88fa8e19bb3"
-        name="Recieve up-to-date information from Polisen.se and Utryckning.se"
+        name="Read top crimes&#xD;&#xA;"
         isAbstract="false"
         isLeaf="false">
         <subjects>
           <subsystemMoniker
             Id="7d11cb62-cf96-4a53-bfff-ec0b5243cd36"
-            LastKnownName="TentaOOADSystem"
+            LastKnownName="CrimeHeadlineSystem"
             LastKnownLocation="ModelingProjectTentaOOAD.uml" />
         </subjects>
       </useCase>
