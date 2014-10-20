@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TentaOOADClassLibrary
 {
-    public class Class1
+    public interface IScreenscraping
     {
+        string Get();
     }
 }

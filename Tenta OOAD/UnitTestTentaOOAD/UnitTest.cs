@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TentaOOADClassLibrary;
 
 namespace UnitTestTentaOOAD
 {
@@ -7,26 +8,27 @@ namespace UnitTestTentaOOAD
     public class UnitTest
     {
         [TestMethod]
-        public void TestHeadlinePolisen.se()
+        public void TestHeadlinePolisen()
         {
             //Assign
+            Scraping scraping = new Scraping();
 
-             
-            //Act
-            string headline=
+
+            string headline = scraping.ScreenScraping(@"http://polisen.se/", @"/html/body/form/div[3]/div[7]/div[2]/div[2]/div/div[1]/div/ul/li[1]/p[1]/a");
             //Assert
             Assert.IsNotNull(headline);
         }
+        
 
-        [TestMethod]
-        public void TestHeadlineUtryckning.se()
-        {
-            //Assign
+        //[TestMethod]
+        //public void TestHeadlineUtryckning.se()
+        //{
+        //    //Assign
            
-            //Act
-            string headline =
-                //Assert
-            Assert.IsNotNull(headline);
-        }
+        //    //Act
+        //    string headline =
+        //        //Assert
+        //    Assert.IsNotNull(headline);
+        //}
     }
 }
